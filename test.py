@@ -54,3 +54,12 @@ print(x)
 x= torch.LongTensor([1231342134,234523,235213])
 #Or the best way to do is from numpy
 # To select whether the  tensor need s to be defined on the GPU or the CPU: Use the .cpu() or .cuda()
+#===================================
+# Random sampling of data(inplace)
+print(torch.Tensor.uniform_(2,6))
+seed = 10
+tmp = torch.Tensor.normal(seed)
+print(tmp)
+#==========================
+# matrix multiplication  - using the matmul function
+tmparr.matmul(x.t()) # where the t()_ represents the transpose operation.
