@@ -63,3 +63,8 @@ print(tmp)
 #==========================
 # matrix multiplication  - using the matmul function
 tmparr.matmul(x.t()) # where the t()_ represents the transpose operation.
+#=================
+# Performing a ReLU is just limiting the input values above a certain threshold.
+# An h.clamp(min=0) will do the job
+tmp.clamp(min=0)
+print(tmp)
